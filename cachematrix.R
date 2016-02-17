@@ -41,19 +41,3 @@ cacheSolve <- function(x, ...) {
     ## Return the value for this time
     mi
 }
-
-##
-##  Test code:  This code can be used to test the functions after they've been loaded into the local workspace
-## 
-##  This sets the matrix to a 9x9 matrix of random integers
-##  test1$set(matrix(sample.int(81,9*9),9,9))
-##
-##  Returns the 9x9 matrix
-##  test1$get()
-##
-##  Matrix multiplies the text matrix with it's cacheSolved inverse which is calculated this first time
-##  test1$get() %*% cacheSolve(debug1)
-##
-##  Uses the round function to return more aesthetic identity matrix, and this time the cached inverse is used
-##  round(test1$get() %*% cacheSolve(debug1))
-##
